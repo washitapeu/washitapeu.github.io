@@ -172,3 +172,88 @@
     }
 
     footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <img src="logo.png" alt="washitapeu logo" class="brand-logo" />
+        <h1>washitapeu</h1>
+      </div>
+      <div class="role">INDIE GAME DEV &amp; DESIGNER</div>
+      <p class="subtitle">
+        Self-taught solo developer building my debut commercial Steam title in GameMaker.
+        My core focus is game design — crafting tight combat loops, rogue-lite economies,
+        and fair risk-reward progression.
+      </p>
+    </header>
+
+    <section class="card">
+      <div class="game-header">
+        <img src="stickbit.png" alt="STICKBIT" class="stickbit-logo" />
+        <span class="badge">COMING TO STEAM</span>
+      </div>
+      <p>
+        A fast-paced 2D action rogue-lite where you fight through chaotic waves,
+        build defensive sentries and firewalls, blow up barrels, and upgrade your
+        meta-progression between runs.
+      </p>
+
+      <div class="skills">
+        <span class="skill">GameMaker</span>
+        <span class="skill">2D Action Rogue-Lite</span>
+        <span class="skill">Systems &amp; Balance</span>
+        <span class="skill">Solo Project</span>
+      </div>
+
+      <div class="buttons">
+        <a class="btn btn-steam" href="https://store.steampowered.com/app/4845370/STICKBIT/" target="_blank" rel="noopener">
+          Wishlist STICKBIT on Steam &rarr;
+        </a>
+        <a class="btn btn-itch" href="https://washitapeu.itch.io/" target="_blank" rel="noopener">
+          My itch.io page
+        </a>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>About &amp; Focus</h2>
+      <p style="margin-bottom: 0;">
+        While I handle programming, art, and production on my solo projects, my main passion
+        is <strong>game design</strong>: designing player-friendly meta-progression without
+        artificial grind walls, balancing item synergies, and creating memorable gaming experiences.
+      </p>
+    </section>
+
+    <footer>
+      <span>&copy; 2026 washitapeu</span>
+      <div>
+        <a href="https://store.steampowered.com/app/4845370/STICKBIT/" target="_blank" rel="noopener">Steam</a> &middot;
+        <a href="https://washitapeu.itch.io/" target="_blank" rel="noopener">itch.io</a> &middot;
+        <a href="https://github.com/washitapeu" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
