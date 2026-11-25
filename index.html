@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>washitapeu — Indie Game Developer & Designer</title>
+  <style>
+    :root {
+      --bg: #0f1117;
+      --card: #181c26;
+      --border: #2a3142;
+      --text: #e6edf3;
+      --muted: #9aa4b8;
+      --accent: #38bdf8;
+      --steam: #1b2838;
+      --steam-hover: #2a475e;
+      --steam-accent: #66c0f4;
+      --itch: #fa5c5c;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    header {
+      margin-bottom: 48px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 32px;
+    }
+
+    .tag {
+      display: inline-block;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.85rem;
+      color: var(--accent);
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      padding: 4px 10px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      letter-spacing: -0.5px;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      color: var(--muted);
+      max-width: 620px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 28px;
+      margin-bottom: 28px;
+    }
+
+    .card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .badge {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.75rem;
+      background: #facc15;
+      color: #111;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-weight: 700;
+    }
+
+    .card p {
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+
+    .skill {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.8rem;
+      background: #11141c;
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 5px 10px;
+      border-radius: 6px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 12px 20px;
+      border-radius: 8px;
+      transition: transform 0.15s ease, background 0.15s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-steam {
+      background: linear-gradient(135deg, #1b2838, #2a475e);
+      color: #fff;
+      border: 1px solid var(--steam-accent);
+    }
+
+    .btn-steam:hover {
+      background: linear-gradient(135deg, #2a475e, #3b6382);
+    }
+
+    .btn-itch {
+      background: rgba(250, 92, 92, 0.12);
+      color: #ff8585;
+      border: 1px solid rgba(250, 92, 92, 0.4);
+    }
+
+    .btn-itch:hover {
+      background: rgba(250, 92, 92, 0.22);
+    }
+
+    footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="tag">INDIE GAME DEV &amp; DESIGNER</div>
+      <h1>washitapeu</h1>
+      <p class="subtitle">
+        Self-taught solo developer building my debut commercial Steam title in GameMaker.
+        My core focus is game design — crafting tight combat loops, rogue-lite economies,
+        and fair risk-reward progression.
+      </p>
+    </header>
+
+    <section class="card">
+      <h2>STICKBIT <span class="badge">COMING TO STEAM</span></h2>
+      <p>
+        A fast-paced 2D action rogue-lite where you fight through chaotic waves,
+        build defensive sentries and firewalls, blow up barrels, and upgrade your
+        meta-progression between runs.
+      </p>
+
+      <div class="skills">
+        <span class="skill">GameMaker</span>
+        <span class="skill">2D Action Rogue-Lite</span>
+        <span class="skill">Systems &amp; Balance</span>
+        <span class="skill">Solo Project</span>
+      </div>
+
+      <div class="buttons">
+        <a class="btn btn-steam" href="https://store.steampowered.com/app/4845370/STICKBIT/" target="_blank" rel="noopener">
+          Wishlist STICKBIT on Steam &rarr;
+        </a>
+        <a class="btn btn-itch" href="https://washitapeu.itch.io/" target="_blank" rel="noopener">
+          More Projects on itch.io
+        </a>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>About &amp; Focus</h2>
+      <p style="margin-bottom: 0;">
+        While I handle programming, art, and production on my solo projects, my main passion
+        is <strong>game design</strong>: designing player-friendly meta-progression without
+        artificial grind walls, balancing item synergies, and creating memorable boss encounters.
+      </p>
+    </section>
+
+    <footer>
+      <span>&copy; 2026 washitapeu</span>
+      <div>
+        <a href="https://store.steampowered.com/app/4845370/STICKBIT/" target="_blank" rel="noopener">Steam</a> &middot;
+        <a href="https://washitapeu.itch.io/" target="_blank" rel="noopener">itch.io</a> &middot;
+        <a href="https://github.com/washitapeu" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
